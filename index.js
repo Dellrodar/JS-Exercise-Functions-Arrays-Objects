@@ -77,7 +77,7 @@ function temperatureCtoF(t) {
 */
 function temperatureInF(t, degree) {
 
-  if (degree.includes('C')) {
+  if (degree =='C') {
     return `${temperatureCtoF(t)}F`;
   }
     return `${t}F`;
@@ -141,10 +141,9 @@ function getName(name) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(arr) {
+  return arr.indexOf('apple');
 }
-
 /**
  * ### Challenge `isItAnApple`
  * 
@@ -160,8 +159,8 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple(arr) {
+  
 }
 
 
