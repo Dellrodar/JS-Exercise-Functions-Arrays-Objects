@@ -333,7 +333,7 @@ function getGermanCars(inventory) {
   const compareArray = ['Audi', 'Mercedes-Benz', 'Volkswagen', 'BMW'];
 
   for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i].car_make.includes(compareArray)) {
+    if (compareArray.includes(inventory[i].car_make)) {
       germanCars.push(inventory[i]);
     }
   }
