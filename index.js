@@ -161,6 +161,16 @@ function appleIndex(arr) {
 */
 function isItAnApple(arr) {
   
+  const filteredApple = [];
+  
+  for ( let i = 0; i < arr.length; i++ ) {
+    if (arr[i] === 'apple') {
+      filteredApple.push(true);
+    } else {
+    filteredApple.push(false);
+  }
+}
+  return filteredApple;
 }
 
 
