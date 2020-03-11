@@ -328,8 +328,16 @@ function getCarInfoById(inventory, id) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
-  /* code here */
+function getGermanCars(inventory) {
+  const germanCars = [];
+  const compareArray = ['Audi', 'Mercedes-Benz', 'Volkswagen', 'BMW'];
+
+  for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i].car_make.includes(compareArray)) {
+      germanCars.push(inventory[i]);
+    }
+  }
+  return germanCars;
 }
 
 /**
