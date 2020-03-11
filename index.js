@@ -166,9 +166,9 @@ function isItAnApple(arr) {
   for ( let i = 0; i < arr.length; i++ ) {
     if (arr[i] === 'apple') {
       filteredApple.push(true);
-    } else {
+      continue;
+    } 
     filteredApple.push(false);
-  }
 }
   return filteredApple;
 }
