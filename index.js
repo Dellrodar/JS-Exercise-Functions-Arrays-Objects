@@ -76,13 +76,11 @@ function temperatureCtoF(t) {
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
 function temperatureInF(t, degree) {
-  
-  var n = t;
 
   if (degree.includes('C')) {
-    n =  temperatureCtoF(t);
+    return `${temperatureCtoF(t)}F`;
   }
-    return (`${n}F`);
+    return `${t}F`;
 }
 
 
